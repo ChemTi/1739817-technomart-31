@@ -63,22 +63,27 @@ img {
     display: none;
 }
 
+.button-search-svg svg:hover {
+    fill: var(--White);
+    stroke: var(--White);
+}
+
 .menu {
     list-style: none;
 }
 
-.menu-current a:not([href]) {
+/* .menu-current a:not([href]) {
     background-color: var(--Very-dark-desaturated-blue-blue);
-}
+} */
 
 .menu a {
     color: var(--White);
 }
 
-.menu a:hover,
+/* .menu a:hover,
 .menu a:focus {
     background-color: var(--White);
-}
+} */
 
 .button-checkout-background a {
     background-color: var(--Dark-moderate-green);
@@ -124,12 +129,25 @@ img {
     padding-bottom: 12px;
 }
 
+.button-entrance:hover {
+    color: var(--Bright-red);
+}
+
+.button-entrance svg:hover {
+    fill: var(--Black);
+    stroke: var(--Black);
+}
+
 .button-registration {
     background-color: var(--White);
     padding-left: 24px;
     padding-right: 24px;
     padding-top: 12px;
     padding-bottom: 12px;
+}
+
+.button-registration:hover {
+    color: var(--Bright-red);
 }
 
 .main-navigation {
