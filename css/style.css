@@ -7,20 +7,24 @@
     --Very-dark-desaturated-blue: #405069;
     --Bright-red: #EE3643;
     --White: #FFFFFF;
+    --Dark-green: #367315;
     --Dark-moderate-green: #63a63e;
+    --Slightly-desaturated-lime-green: #8ed78f;
     --Light-grayish-blue-blue: #f1f5f7;
     --Light-orange: #FFBF47;
     --Bright-cyan: #3bbce3;
     --Very-soft-magenta: #dc91d8;
-    --Slightly-desaturated-lime-green: #8ed78f;
     --Light-grayish-orange: #f9f5f0;
     --Light-grayish-orange-orange: #F7F3EC;
     --Gray: #a9a9a9;
+    --Light-gray: #c5c5c5;
     --Very-light-gray-gray: #eaeaea;
     --Very-light-gray: #f4f4f4;
+    --Very-light-gray-e5: #e5e5e5;
+    --Very-light-gray-f1: #F1F1F1;
     --Light-grayish-blue: #f3f7f9;
     --Very-light-orange: #ffd180;
-    --Light-gray: #c5c5c5;
+    
 }
 
 /* Global */
@@ -45,6 +49,21 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+/* Visibility */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+            clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+} 
 
 /* Main navigation */
 
@@ -514,6 +533,8 @@ img {
     height: 30px;
     background-color: var(--Bright-red);
     text-align: center;
+    color: var(--White);
+    margin: 0;
 }
 
 .products-item-image6000 {
@@ -875,10 +896,6 @@ margin: 0;
     margin: 0;
 }
 
-.society-info h2 {
-    display: none;
-}
-
 .friendly {
     list-style: none;
     margin: 0;
@@ -1108,6 +1125,7 @@ margin: 0;
     background-color: var(--Light-grayish-orange-orange);
     width: 220px;
     height: 38px;
+    margin: 0;
 }
 
 /* CatalogPage */
@@ -1121,6 +1139,15 @@ margin: 0;
     width: 220px;
     height: 80px;
 }
+
+/* CatalogPage */
+.filter-range-greenline {
+    background-color: var(--Dark-moderate-green);
+    width: 152px;
+    height: 2px;
+    margin: 0;
+}
+
 
 /* CatalogPage */
 .filters legend {
@@ -1167,7 +1194,282 @@ margin: 0;
 }
 
 /* CatalogPage */
-.filter-manufacturers {
+.filter-manufacturers a {
+    font-family: PT Sans, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: var(--Black);
+}
+
+/* CatalogPage */
+.filter-power a {
+    font-family: PT Sans, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: var(--Black);
+}
+
+/* CatalogPage */
+.button-show {
+    font-family: PT Sans, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    color: var(--Black);
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    background-color: var(--White);
+    padding: 10px 79.57px 10px 78.43px;
+}
+
+/* CatalogPage */
+.sort h2 {
+    font-family: PT Sans, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;   
+    color: var(--Black); 
+}
+
+/* CatalogPage */
+.sort-price {
+    font-family: PT Sans, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    color: var(--Bright-red);
+}
+
+/* CatalogPage */
+.sort-type, .sort-func {
+    font-family: PT Sans, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;       
+    color: var(--Black); 
+    text-decoration: underline dotted var(--Bright-red);
+} 
+
+/* CatalogPage */
+.perforators-list-view {
     list-style: none;
 }
 
+/* CatalogPage */
+.perforators-list-view h3 {
+    font-family: PT Sans, Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;    
+    color: var(--Black); 
+}
+
+/* CatalogPage */
+.bosh6000, .bosh6000-checked, .bosh3000, .bosh2000 {
+    width: 220px;
+    height: 318px;
+}
+
+/* CatalogPage */
+.perforators-image-6000 {
+    background-color: var(--White);
+    width: 144px;
+    height: 128px;
+}
+
+/* CatalogPage */
+.button-buy-perfo {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--White); 
+    width: 135px;
+    height: 38px;
+    background-color: var(--Dark-moderate-green);
+    box-shadow: inset 0px -3px 0px var(--Dark-green);
+    border-radius: 2px;
+    padding: 10px 40px 10px 0;
+}
+
+.button-buy-perfo svg {
+    padding-left: 25px;
+    opacity: 0.3;
+} 
+
+/* CatalogPage */
+.button-bookmarks {
+    width: 135px;
+    height: 38px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--Very-dark-desaturated-blue-c);
+    background-color: var(--White);
+    border: 3px solid var(--Dark-green);
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding: 11px 34px 9px 33px;
+}
+
+/* CatalogPage */
+.perforators-image-3000, .perforators-image-2000 {
+    width: 128px;
+    height: 112px;
+    background-color: var(--White);
+}
+
+/* CatalogPage */
+.pagination {
+    list-style: none;
+    margin: 0;
+}
+
+.pagination-one {
+    font-family: PT Sans, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    color: var(--White);
+    background-color: var(--Bright-red);
+    padding: 10px 15px;
+    border: 1px solid var(--Very-light-gray-e5);
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+/* CatalogPage */
+.pagination-two, .pagination-three {
+    font-family: PT Sans, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    color: var(--Black);
+    border: 1px solid var(--Very-light-gray-e5);
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding: 10px 15px;;
+}
+
+/* CatalogPage */
+.pagination-next {
+    font-family: PT Sans, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    color: var(--Black);
+    padding: 10px 32px;
+    background-color: var(--White);
+    border: 1px solid var(--Very-light-gray-e5);
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+/* CatalogPage */
+.couplewords {
+    width: 1200px;
+    height: 261px;
+    margin: 59px 0 0 0;
+    background-color: var(--Light-grayish-blue-blue);
+}
+
+/* CatalogPage */
+.couplewords h3 {
+    width: 338px;
+    height: 30px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--Black);
+    padding: 64px 732px 25px 130px;
+    margin: 0;
+}
+
+/* CatalogPage */
+.couplewords p {
+    font-family: PT Sans, Arial, sans-serif;
+    width: 907px;
+    height: 74px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 24px;
+    color: var(--Black);
+    margin: 0;
+    padding-bottom: 68px;
+}
+
+/* CatalogPage */
+.main-footer-catalog {
+    width: 1200px;
+    /* height: 300px; */
+    background-color: var(--Very-dark-desaturated-blue-c);
+    margin: 0;
+}
+
+/* CatalogPage, Modal window: cart */
+.modal-cart {
+    width: 620px;
+    /* height: 275px; */
+}
+
+/* CatalogPage, Modal window: cart */
+.modal-cart h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--Black);
+}
+
+/* CatalogPage, Modal window: cart */
+.button-background-catalog {
+    width: 620px;
+    height: 112px;
+    background-color: var(--Very-light-gray-f1);
+}
+
+/* CatalogPage, Modal window: cart */
+.button-order-catalog {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--White);
+    width: 192px;
+    height: 38px;
+    background-color: var(--Bright-red);
+    padding: 11px 46px 9px 47px;
+}
+
+/* CatalogPage, Modal window: cart */
+.button-continueshop-catalog {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--Black);
+    background-color: var(--White);
+    padding: 11px 31px 9px 32px;
+}
