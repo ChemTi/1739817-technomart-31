@@ -5,6 +5,7 @@
     --Very-dark-desaturated-blue-blue: #293449;
     --Very-dark-desaturated-blue-c: #32425c;
     --Very-dark-desaturated-blue: #405069;
+    --Very-dark-desaturated-blue-gradient: #212a3a;
     --Bright-red: #EE3643;
     --White: #FFFFFF;
     --Dark-green: #367315;
@@ -24,7 +25,7 @@
     --Very-light-gray-f1: #F1F1F1;
     --Light-grayish-blue: #f3f7f9;
     --Very-light-orange: #ffd180;
-    
+
 }
 
 /* Global */
@@ -73,7 +74,7 @@ img {
             clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-} 
+}
 
 /* Main navigation */
 
@@ -109,7 +110,7 @@ img {
 }
 
 .main-header-logo-search-position {
-    width: 307px;
+    /* width: 307px; */
     height: 47px;
     display: flex;
     justify-content: inherit;
@@ -124,12 +125,49 @@ img {
 }
 
 .search-position {
-    padding-top: 9px;
+    position: relative;
 }
 
-.button-search-svg svg:hover {
-    fill: var(--White);
-    stroke: var(--White);
+.button-search-svg {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.button-search {
+    border: 0;
+    margin: 0 20px 0 0;
+    font-size: 18px;
+    height: 42px;
+    line-height: 24px;
+    cursor: pointer;
+    padding-left: 43px;
+    background-color: transparent;
+    opacity: 0.8;
+    color: var(--White);
+}
+
+.button-search:focus {
+    background-color:  var(--White);
+    opacity: 1;
+    color: var(--Black);
+}
+
+.button-search:focus + .button-search-svg  svg path {
+    fill: var(--Bright-red);
+    opacity: 1;
+}
+
+.button-search-svg svg {
+    opacity: 0.3;
+}
+
+.button-search:hover + .button-search-svg  svg {
+    opacity: 1;
+}
+
+input.button-search:hover::placeholder {
+    color: var(--White);
 }
 
 .menu {
@@ -266,7 +304,7 @@ img {
     padding: 0 10px;
 }
 
-/*Materials*/ 
+/*Materials*/
 
 .catalog h2 {
     display: none;
@@ -325,7 +363,7 @@ img {
 
 .button-material::before,
 .button-tools::before,
-.button-technique::before, 
+.button-technique::before,
 .button-discount::before,
 .button-delivery::before {
     content: "";
@@ -463,7 +501,7 @@ img {
     padding-left: 30px;
     padding-right: 31px;
     padding-top: 10px;
-    padding-bottom: 10px;   
+    padding-bottom: 10px;
 }
 
 /* Discount */
@@ -533,7 +571,7 @@ img {
     padding-left: 36px;
     padding-right: 37px;
     padding-top: 10px;
-    padding-bottom: 10px; 
+    padding-bottom: 10px;
 }
 
 /* Slider */
@@ -689,6 +727,9 @@ img {
     text-align: center;
     position: relative;
     overflow: hidden;
+    border: 1px solid var(--Very-light-gray-gray);
+    box-sizing: border-box;
+    padding-bottom: 21px;
 }
 
 .products-list-item-position h3 {
@@ -702,6 +743,11 @@ img {
     order: 2;
     width: 185px;
     height: 43px;
+}
+
+.products-item-image-objectfit {
+    width: 100%;
+    object-fit: cover;
 }
 
 .products-item-image9000 {
@@ -826,7 +872,7 @@ img {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 18px; 
+    line-height: 18px;
     text-transform: uppercase;
     color: var(--White);
     padding-top: 11px;
@@ -884,7 +930,7 @@ img {
     font-weight: normal;
     font-size: 30px;
     line-height: 30px;
-    text-transform: uppercase; 
+    text-transform: uppercase;
     color: var(--Black);
     margin: 0;
 }
@@ -962,6 +1008,13 @@ img {
     grid-template-columns: auto auto;
 }
 
+.services-delivery-pleasure {
+    width: 619px;
+    background-image: url("..//img/index/truck.png");
+    background-repeat: no-repeat;
+    background-position: 150px 25px;
+}
+
 .services-truck-truck, .services-guarantee-guarantee, .services-credit-credit {
     font-style: normal;
     font-weight: normal;
@@ -986,9 +1039,9 @@ img {
 
 .services-delivery-button-credit {
     font-size: 14px;
-    line-height: 18px;   
+    line-height: 18px;
     text-transform: uppercase;
-    color: var(--White); 
+    color: var(--White);
     background-color: var(--Bright-red);
     padding: 10px 40px;
     width: 195px;
@@ -1101,7 +1154,7 @@ margin: 0;
     line-height: 24px;
     color: var(--Black);
     margin: 0;
-    margin-bottom: 32px; */
+    margin-bottom: 32px; 
 }
 
 .contacts-map {
@@ -1160,7 +1213,7 @@ margin: 0;
     font-weight: normal;
     font-size: 18px;
     line-height: 24px;
-    color: var(--Light-grayish-blue); 
+    color: var(--Light-grayish-blue);
     margin: 0;
     margin-top: 22px;
     margin-bottom: 54px;
@@ -1197,7 +1250,7 @@ margin: 0;
     font-weight: normal;
     font-size: 18px;
     line-height: 24px;
-    color: var(--Light-grayish-blue); 
+    color: var(--Light-grayish-blue);
 }
 
 
@@ -1207,14 +1260,14 @@ margin: 0;
     padding-top: 22px;
     padding-left: 21px;
     justify-self: flex-end;
-} 
+}
 
 .footer-navigation-local {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-} 
+}
 
 .footer-navigation-local a {
     font-style: normal;
@@ -1262,13 +1315,26 @@ margin: 0;
     display: flex;
     justify-content: space-around;
     margin-left: 42px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-/* .buton-social {
-    background: linear-gradient(0deg, #212A3A, #212A3A);
-    padding: 9px;
+.button-social {
+    width: 44px;
+    height: 44px;
+    color: var(--White);
+    background-color: var(--Very-dark-desaturated-blue-gradient);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
-} */
+}
+
+.button-social:hover,
+.button-social:focus {
+    background-color: var(--Bright-red);
+}
 
 .friendly-feedback-position {
     display: flex;
@@ -1293,6 +1359,11 @@ margin: 0;
 
 .feedback-post, .develop-site {
     color: var(--Very-light-orange);
+}
+
+.feedback-post:active, 
+.develop-site:active {
+    color: var(--Bright-red);
 }
 
 /* Modal window: Write us */
@@ -1327,7 +1398,7 @@ margin: 0;
     display: flex;
     justify-content: space-between;
     margin-top: 46px;
-    margin-bottom: 13px;    
+    margin-bottom: 13px;
 }
 
 .login-user, .login-email {
@@ -1648,8 +1719,8 @@ margin: 0;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
-    line-height: 18px;   
-    color: var(--Black); 
+    line-height: 18px;
+    color: var(--Black);
 }
 
 /* CatalogPage */
@@ -1668,10 +1739,10 @@ margin: 0;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
-    line-height: 18px;       
-    color: var(--Black); 
+    line-height: 18px;
+    color: var(--Black);
     text-decoration: underline dotted var(--Bright-red);
-} 
+}
 
 /* CatalogPage */
 .perforators-list-view {
@@ -1684,8 +1755,8 @@ margin: 0;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
-    line-height: 20px;    
-    color: var(--Black); 
+    line-height: 20px;
+    color: var(--Black);
 }
 
 /* CatalogPage */
@@ -1708,7 +1779,7 @@ margin: 0;
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
-    color: var(--White); 
+    color: var(--White);
     width: 135px;
     height: 38px;
     background-color: var(--Dark-moderate-green);
@@ -1720,7 +1791,7 @@ margin: 0;
 .button-buy-perfo svg {
     padding-left: 25px;
     opacity: 0.3;
-} 
+}
 
 /* CatalogPage */
 .button-bookmarks {
