@@ -643,9 +643,6 @@ input.button-search:hover::placeholder {
     text-transform: uppercase;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
-    color: var(--White);
 }
 
 .button-material::before,
@@ -946,10 +943,6 @@ input.button-search:hover::placeholder {
 }
 
 .button-open-catalog {
-    font-size: 14px;
-    line-height: 18px;
-    text-transform: uppercase;
-    color: var(--White);
     padding-top: 11px;
     padding-bottom: 9px;
     padding-left: 46px;
@@ -1406,16 +1399,25 @@ input.button-search:hover::placeholder {
     display: flex;
     flex-flow: nowrap;
     justify-content: space-between;
+    position: relative;
 }
 
 .services-services {
     list-style: none;
     margin: 0;
     padding: 0 80px 0 0;
-    background-image: url("../img/index/vertical-shadow.png");
-    background-position: 235px -24px;
-    background-repeat: no-repeat;
+}
 
+.services-services::after {
+    content: "";
+    width: 10px;
+    height: 279px;
+    background-image: url("../img/index/vertical-shadow.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -55px;
+    left: 230px;
 }
 
 .services-check-position {
@@ -1907,12 +1909,34 @@ input.button-search:hover::placeholder {
 
 /* Modal window: Write us */
 
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    color: var(--Black);
+    background-color: var(--White);
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+    z-index: 100;
+}
+
 .modal-writeus {
     width: 620px;
     height: 430px;
-    margin: 0 auto;
-    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
-    position: relative;
+    display: none;
+}
+
+.modal-map {
+    width: 943px;
+    height: 449px;
+    background-color: var(--White);
+    display: none;
+}
+
+.modal-map img {
+    display: block;    
 }
 
 .decor-elem-modal {
@@ -2030,16 +2054,47 @@ input.button-search:hover::placeholder {
     padding-right: 80px;
 }
 
-.modal-close span {
-    display: none;
+.modal-close, .modal-close-catalog {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    width: 21px;
+    height: 21px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
 }
 
-.modal-close {
-    border: none;
-    background-color: var(--White);
+
+.modal-close::before,
+.modal-close::after,
+.modal-close-catalog::before,
+.modal-close-catalog::after {
+    content: "";
     position: absolute;
-    top: 21px;
-    right: 11px;
+    top: 10px;
+    left: 2px;
+    width: 19px;
+    height: 3px;
+    background-color: var(--Bright-red);
+}
+
+.modal-close::before,
+.modal-close-catalog::before {
+    transform: rotate(45deg);
+}
+
+.modal-close::after,
+.modal-close-catalog::after {
+    transform: rotate(-45deg);
+}
+
+.button-catalog-position {
+    width: 394px;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .display-none {
@@ -2910,8 +2965,9 @@ input.button-search:hover::placeholder {
 
 /* CatalogPage, Modal window: cart */
 .modal-cart {
+    display: none;
     width: 620px;
-    /* height: 275px; */
+    height: 282px;
 }
 
 /* CatalogPage, Modal window: cart */
@@ -2921,6 +2977,20 @@ input.button-search:hover::placeholder {
     font-size: 24px;
     line-height: 30px;
     color: var(--Black);
+    margin: 73px 0 67px;
+    text-align: center;
+}
+
+.modal-cart h2::before {
+    content: "";
+    width: 66px;
+    height: 66px;
+    background-image: url("../img/catalog/icon-mark-catalog.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    position: absolute;
+    top: 60px;
+    left: 80px;
 }
 
 /* CatalogPage, Modal window: cart */
@@ -2928,6 +2998,13 @@ input.button-search:hover::placeholder {
     width: 620px;
     height: 112px;
     background-color: var(--Very-light-gray-f1);
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: center;
+}
+
+.button-background-catalog p {
+    margin: 0;
 }
 
 /* CatalogPage, Modal window: cart */
@@ -2938,8 +3015,6 @@ input.button-search:hover::placeholder {
     line-height: 18px;
     text-transform: uppercase;
     color: var(--White);
-    width: 192px;
-    height: 38px;
     background-color: var(--Bright-red);
     padding: 11px 46px 9px 47px;
 }

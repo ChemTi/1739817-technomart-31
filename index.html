@@ -221,10 +221,10 @@
             <p class="price-del">
               <s>32500 Р.</s>
             </p>
-              <div class="button-price-products" href="#">
+              <div class="button-price-products">
                 <svg width="141" height="38" viewBox="0 0 141 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M121.632 0H3C1.35 0 0 1.35 0 3V35C0 36.65 1.35 38 3 38H121.632L141 19L121.632 0Z" fill="#EE3643"/>
-                  <text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle" fill="#ffffff" font-family="PT Sans, Arial, sans-serif" font-style: "normal"; font-size="17" font-weight="700" line-height: "18px" text-transform: "uppercase">25500 Р.</text>
+                  <text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle" fill="#ffffff" >25500 Р.</text>
                 </svg>
               </div>
           </li>
@@ -249,10 +249,10 @@
             <p class="price-del">
               <s>22500 Р.</s>
             </p>
-              <div class="button-price-products" href="#">
+              <div class="button-price-products">
                 <svg width="141" height="38" viewBox="0 0 141 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M121.632 0H3C1.35 0 0 1.35 0 3V35C0 36.65 1.35 38 3 38H121.632L141 19L121.632 0Z" fill="#EE3643"/>
-                  <text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle" fill="#ffffff" font-family="PT Sans, Arial, sans-serif" font-style: "normal"; font-size="17" font-weight="700" line-height: "18px" text-transform: "uppercase">15500 Р.</text>
+                  <text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle" fill="#ffffff">15500 Р.</text>
                 </svg>
               </div>
           </li>
@@ -276,10 +276,10 @@
             <p class="price-del">
               <s>30500 Р.</s>
             </p>
-              <div class="button-price-products" href="#">
+              <div class="button-price-products">
                 <svg width="141" height="38" viewBox="0 0 141 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M121.632 0H3C1.35 0 0 1.35 0 3V35C0 36.65 1.35 38 3 38H121.632L141 19L121.632 0Z" fill="#EE3643"/>
-                  <text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle" fill="#ffffff" font-family="PT Sans, Arial, sans-serif" font-style: "normal"; font-size="17" font-weight="700" line-height: "18px" text-transform: "uppercase">25500 Р.</text>
+                  <text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle" fill="#ffffff">25500 Р.</text>
                 </svg>
               </div>
           </li>
@@ -304,10 +304,10 @@
             <p class="price-del">
               <s>22500 Р.</s>
             </p>
-              <div class="button-price-products" href="#">
+              <div class="button-price-products">
                 <svg width="141" height="38" viewBox="0 0 141 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M121.632 0H3C1.35 0 0 1.35 0 3V35C0 36.65 1.35 38 3 38H121.632L141 19L121.632 0Z" fill="#EE3643"/>
-                  <text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle" fill="#ffffff" font-family="PT Sans, Arial, sans-serif" font-style: "normal"; font-size="17" font-weight="700" line-height: "18px" text-transform: "uppercase">12500 Р.</text>
+                  <text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle" fill="#ffffff">12500 Р.</text>
                 </svg>
               </div>
           </li>
@@ -445,8 +445,12 @@
           <p class="contacts-map">
             <img src="img/index/map.jpg" width="300" height="158" alt="Карта офиса">
           </p>
-          <!-- Здесь будет карта
-          <iframe src="" frameborder="0"></iframe> -->
+          <div class="modal modal-map">
+            <h3 class="visually-hidden">Как до нас добраться</h3>
+            <!-- <img src="../1739817-technomart-31/img/index/map-popup.png" width="943" height="449" alt="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"> -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="943" height="449" allowfullscreen title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
+            <button class="modal-close" type="button" aria-label="Закрыть"></button>
+          </div>
           <a class="contacts-writeus" href="#">ЗАБЛУДИЛИСЬ НАПИШИТЕ НАМ</a>
         </div>
       </section>
@@ -543,7 +547,7 @@
     </footer>
 
     <!--modal window: write us-->
-    <section class="modal-writeus display-none">
+    <section class="modal modal-writeus">
       <h2 class="visually-hidden">Напишите нам</h2>
       <p class="decor-elem-modal">
         <!-- Декоративный элемент модального окна - красная полоса -->
@@ -569,13 +573,7 @@
           </div>
         </div>
       </form>
-      <button class="modal-close" type="button"><span>Закрыть</span>
-        <a href="#">
-          <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13.2729 10.4999L20.6949 3.07793C21.0839 2.68893 21.0839 2.05293 20.6949 1.66393L19.3359 0.304934C18.9469 -0.0840664 18.3109 -0.0840664 17.9219 0.304934L10.4999 7.72693L3.07793 0.304934C2.68893 -0.0840664 2.05293 -0.0840664 1.66393 0.304934L0.304934 1.66393C-0.0840664 2.05293 -0.0840664 2.68893 0.304934 3.07793L7.72693 10.4999L0.305934 17.9219C-0.0830664 18.3109 -0.0830664 18.9469 0.305934 19.3359L1.66493 20.6949C2.05393 21.0839 2.68993 21.0839 3.07893 20.6949L10.5009 13.2729L17.9229 20.6949C18.3119 21.0839 18.9479 21.0839 19.3369 20.6949L20.6959 19.3359C21.0849 18.9469 21.0849 18.3109 20.6959 17.9219L13.2729 10.4999Z" fill="#EE3643"/>
-          </svg>
-        </a>
-      </button>
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
     </section>
   </body>
 </html>
