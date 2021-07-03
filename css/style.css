@@ -930,7 +930,7 @@ input.button-search:hover::placeholder {
 .img-perfo, img-drills {
     width: 620px;
     height: 266px;
-    /* object-fit: cover; */
+    object-fit: cover;
     position: relative;
 }
 
@@ -1368,6 +1368,7 @@ input.button-search:hover::placeholder {
     height: inherit;
     margin: 0 auto;
     padding: 0 10px;
+    position: relative;
 }
 
 .services-goodmarket {
@@ -1489,11 +1490,38 @@ input.button-search:hover::placeholder {
     grid-template-columns: auto auto;
 }
 
+.services-guarantee-position {
+    position: absolute;
+    top: 240px;
+    left: 335px;
+}
+
+.services-credit-position {
+    position: absolute;
+    top: 240px;
+    left: 335px
+}
+
 .services-delivery-pleasure {
     width: 619px;
     background-image: url("..//img/index/truck.png");
     background-repeat: no-repeat;
     background-position: 150px 25px;
+}
+
+.services-guarantee-changeitem {
+    width: 628px;
+    background-image: url("..//img/index/medal.png");
+    background-repeat: no-repeat;
+    background-position: 240px 0px;
+}
+
+.services-credit-debt {
+    width: 628px;
+    height: 283px;
+    background-image: url("..//img/index/money.png");
+    background-repeat: no-repeat;
+    background-position: 160px 0px;
 }
 
 .services-truck-truck, .services-guarantee-guarantee, .services-credit-credit {
@@ -1504,7 +1532,23 @@ input.button-search:hover::placeholder {
     text-transform: uppercase;
     color: var(--Very-dark-desaturated-blue-c);
     margin: 0;
+}
+
+.services-truck-truck {
     margin-bottom: 30px;
+}
+
+.services-guarantee-guarantee {
+    margin-bottom: 25px;
+}
+
+.services-credit-textblock {
+    width: 309px;
+    height: 107px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    margin-bottom: 37px;
 }
 
 .services-description-delivery, .services-description-guarantee, .services-description-credit {
