@@ -18,7 +18,7 @@
         <div class="main-header-darktheme">
           <div class="main-header-center">
             <div class="main-header-logo-search-position">
-                <a class="main-logo-header" href="../1739817-technomart-31/index.html">
+                <a class="main-logo-header" href="index.html">
                   Техномарт   
                 </a>
               <form class="search search-position" action="#" method="GET">
@@ -82,7 +82,7 @@
                 <ul class="header-navigation">
                   <li><a href="#">Главная</a></li>
                   <li><a href="#">Компания</a></li>
-                  <li><a href="../1739817-technomart-31/catalog.html">Каталог</a></li>
+                  <li><a href="catalog.html">Каталог</a></li>
                   <li><a href="#">Новости</a></li>
                   <li><a href="#anchor-popularitems">Спецпредложения</a></li>
                   <li><a href="#anchor-delivery">Доставка</a></li>
@@ -150,10 +150,28 @@
               </div>
               <a class="button-delivery" href="#">БЕСПЛАТНО</a>
             </li>
-            <li class="slider-content">
+            <li class="slider-content slider-content-perfo">
               <h3>Перфораторы</h3>
               <p>Настоящие мужские игрушки</p>
               <img class="img-perfo" src="img/index/slider-perforators.jpg" width="620" height="266" alt="Строитель с перфоратором пробивает стену">
+              <a class="slider-content-left-icon" href="#">
+                <svg  aria-hidden="true" focusable="false"  width="22" height="40" viewBox="0 0 22 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.9244 0.941467L21.9225 2.98927L4.90696 20.4361L21.978 37.9376L19.9789 39.9854L0.910614 20.4361L19.9244 0.941467Z" fill="white"/>
+                </svg>
+              </a>
+              <a class="slider-content-right-icon" href="#">
+                <svg  aria-hidden="true" focusable="false"  width="22" height="40" viewBox="0 0 22 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.07568 39.0585L0.0775054 37.0107L17.0931 19.5639L0.0220266 2.06243L2.02116 0.0146289L21.0894 19.5639L2.07568 39.0585Z" fill="white"/>
+                </svg>
+              </a>
+              <div class="slider-content-button-position">
+                <a class="button-open-catalog" href="../1739817-technomart-31/catalog.html">Открыть каталог</a>
+              </div>
+            </li>
+            <li class="slider-content slider-content-drills display-none">
+              <h3>Дрели</h3>
+              <p>Соседям на радость</p>
+              <img class="img-drills" src="img/index/slider-drills.jpg" width="620" height="266" alt="Строитель с дрелью сверлит стену">
               <a class="slider-content-left-icon" href="#">
                 <svg  aria-hidden="true" focusable="false"  width="22" height="40" viewBox="0 0 22 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M19.9244 0.941467L21.9225 2.98927L4.90696 20.4361L21.978 37.9376L19.9789 39.9854L0.910614 20.4361L19.9244 0.941467Z" fill="white"/>
@@ -165,13 +183,8 @@
                 </svg>
               </a>
               <div class="slider-content-button-position">
-                <a class="button-open-catalog" href="#">Открыть каталог</a>
+                <a class="button-open-catalog" href="../1739817-technomart-31/catalog.html">Открыть каталог</a>
               </div>
-            </li>
-            <li class="slider-content visually-hidden">
-              <h3>Дрели</h3>
-              <p>Соседям на радость</p>
-              <img class="img-drills" src="img/index/slider-drills.jpg" width="620" height="266" alt="Строитель с дрелью сверлит стену">
             </li>
           </ul>
           <!-- <div class=slider>
@@ -447,14 +460,14 @@
             Вы можете забрать товар сами, <br>
             заехав в наш офис:
           </p>
-          <p class="contacts-map">
+          <a class="contacts-map" href="#">
             <img src="img/index/map.jpg" width="300" height="158" alt="Карта офиса">
-          </p>
+          </a>
           <div class="modal modal-map">
             <h3 class="visually-hidden">Как до нас добраться</h3>
             <!-- <img src="../1739817-technomart-31/img/index/map-popup.png" width="943" height="449" alt="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"> -->
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="943" height="449" allowfullscreen title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
-            <button class="modal-close" type="button" aria-label="Закрыть"></button>
+            <button class="modal-close modal-close-map" type="button" aria-label="Закрыть"></button>
           </div>
           <a class="contacts-writeus" href="#">ЗАБЛУДИЛИСЬ НАПИШИТЕ НАМ</a>
         </div>
@@ -548,16 +561,14 @@
           </div>
         </div>
       </section>
-
     </footer>
 
     <!--modal window: write us-->
     <section class="modal modal-writeus">
       <h2 class="visually-hidden">Напишите нам</h2>
       <p class="decor-elem-modal">
-        <!-- Декоративный элемент модального окна - красная полоса -->
       </p>
-      <form class="login-form-position" action="#" method="POST">
+      <form class="login-form-position login-form" action="#" method="POST">
         <div class="login-form-name-lastname-position">
           <p class="login-user">
             <label class="login-user-position" for="name-lastname">Ваше имя:</label>
@@ -567,7 +578,7 @@
             <label class="login-email-position" for="user-email">Ваш e-mail:</label>
             <input class="login-icon-email" type="email" name="email" id="user-email" placeholder="email@example.com" autofocus>
           </p>
-         </div>
+        </div>
         <p class="text-letter">
           <label class="text-letter-position" for="text-write">Текст письма:</label>
           <input class="text-write-free" type="text" name="text" id="text-write" placeholder="В свободной форме" autofocus>
@@ -578,7 +589,23 @@
           </div>
         </div>
       </form>
-      <button class="modal-close" type="button" aria-label="Закрыть форму"></button>
+      <button class="modal-close modal-close-writeus" type="button" aria-label="Закрыть"></button>
     </section>
+    <!--modal window: cart -->
+    <section class="modal modal-cart"> 
+      <p class="decor-elem-modal">       
+      </p>
+      <h2>Товар добавлен в корзину!</h2>
+      <button class="modal-close-catalog" type="button" aria-label="Закрыть форму"></button>
+      <div class="button-background-catalog">
+        <div class="button-catalog-position">
+          <a class="button-order-catalog" href="#">ОФОРМИТЬ ЗАКАЗ</a>
+          <a class="button-continueshop-catalog" href="#">ПРОДОЛЖИТЬ ПОКУПКИ</a>
+        </div>
+      </div>
+    </section>
+    <script src="js/feedback.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/cart.js"></script>
   </body>
 </html>
