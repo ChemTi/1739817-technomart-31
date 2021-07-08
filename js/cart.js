@@ -1,13 +1,15 @@
-const productsBuyButton = document.querySelector(".products-list-item-button-buy");
+const productsBuyButton = document.querySelectorAll(".products-list-item-button-buy"); //  надо взять все элементы в псевдомассив
 const continueBuyButton = document.querySelector(".button-continueshop-catalog");
 const modalCloseCatalog = document.querySelector(".modal-close-catalog");
 const modalCart = document.querySelector(".modal-cart");
 
-
-productsBuyButton.addEventListener("click", function (evt) {
-    evt.preventDefault();
+productsBuyButton.forEach((item)=>{ // проходим циклом по коллекции элементов и вешаем на каждый элемент событие по нажатию
+    item.addEventListener("click", function (evt) {
+        evt.preventDefault();
     modalCart.classList.add("modal-show");
-});
+    });
+})
+
 
 modalCloseCatalog.addEventListener("click", function (evt) {
     evt.preventDefault();

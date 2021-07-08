@@ -170,7 +170,7 @@ img {
 }
 
 .main-header-bookmark-cart-order-position {
-    width: 470px;
+    /*!*width: 470px; *! Убрал ширину так как у меня на ff едет верстка*/
     height: inherit;
     display: flex;
     justify-content: flex-end;
@@ -182,9 +182,9 @@ img {
 }
 
 .button-search-svg {
-  position: absolute;
-  left: 10px;
-  top: 10px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
 }
 
 .button-search {
@@ -297,7 +297,7 @@ input.button-search:hover::placeholder {
 .header-menu-login-icon:focus::before,
 .header-menu-login-cart:focus::before,
 .header-menu-login-icon:active::before,
-.header-menu-login-cart:active::before { 
+.header-menu-login-cart:active::before {
     opacity: 0.3;
 }
 
@@ -309,7 +309,7 @@ input.button-search:hover::placeholder {
     background-color: var(--Strong-green);
 }
 
-.button-checkout-order:focus, 
+.button-checkout-order:focus,
 .button-checkout-order:active {
     color: var(--Dark-white);
 }
@@ -461,15 +461,15 @@ input.button-search:hover::placeholder {
 }
 
 /* CatalogPage */
-.button-entrance-catalog-icon-user:hover path, 
+.button-entrance-catalog-icon-user:hover path,
 .button-entrance-catalog-icon-logout:hover path {
     fill: var(--Very-dark-desaturated-blue-basic-grey);
 }
 
 /* CatalogPage */
-.button-entrance-catalog-icon-user:focus path, 
+.button-entrance-catalog-icon-user:focus path,
 .button-entrance-catalog-icon-logout:focus path,
-.button-entrance-catalog-icon-user:active path, 
+.button-entrance-catalog-icon-user:active path,
 .button-entrance-catalog-icon-logout:active path {
     fill: var(--Light-gray);
 }
@@ -495,7 +495,7 @@ input.button-search:hover::placeholder {
     height: 17px;
     top: 13px;
     left: 18px;
-} 
+}
 
 .button-entrance:hover,
 .button-registration:hover {
@@ -511,7 +511,7 @@ input.button-search:hover::placeholder {
 
 .button-entrance:hover path {
     fill: var(--Very-dark-desaturated-blue-basic-grey);
-} 
+}
 
 .button-entrance:focus path,
 .button-entrance:active path{
@@ -675,7 +675,7 @@ input.button-search:hover::placeholder {
 .button-tools:focus::before,
 .button-technique:focus::before,
 .button-discount:focus::before,
-.button-delivery:focus::before, 
+.button-delivery:focus::before,
 .button-material:active::before,
 .button-tools:active::before,
 .button-technique:active::before,
@@ -691,7 +691,7 @@ input.button-search:hover::placeholder {
     top: 64px;
     left: 23px;
     padding-left: 23px;
-    padding-right: 25px; 
+    padding-right: 25px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -1060,7 +1060,7 @@ input.button-search:hover::placeholder {
 
 .products-list li:hover {
     box-shadow: 2px 3px 30px 0 var(--Very-light-gray-gray),
-                -2px 0 30px 0 var(--Very-light-gray-gray); 
+                -2px 0 30px 0 var(--Very-light-gray-gray);
 
 }
 
@@ -1109,7 +1109,7 @@ input.button-search:hover::placeholder {
     order: 1;
     padding: 6px 18px 8px 18px;
 }
- 
+
 .products-list-item-buttons-position {
     width: 220px;
     height: 164px;
@@ -1117,7 +1117,7 @@ input.button-search:hover::placeholder {
     top: 10px;
     left: 5px;
     opacity: 0;
-}  
+}
 
 .products-list-item-button-buy-position::before {
     content: "";
@@ -1141,11 +1141,11 @@ input.button-search:hover::placeholder {
     outline: 0;
     border-color: var(--Bright-red);
     box-shadow: 2px 3px 30px 0 var(--Very-light-gray-gray),
-                -2px 0 30px 0 var(--Very-light-gray-gray); 
+                -2px 0 30px 0 var(--Very-light-gray-gray);
     opacity: 1;
 }
 
-.products-list-item-position:hover .products-item-image9000, 
+.products-list-item-position:hover .products-item-image9000,
 .products-list-item-position:hover .products-item-image3000,
 .products-list-item-position:hover .products-item-image6000,
 .products-list-item-position:hover .products-item-image2000 {
@@ -1366,14 +1366,14 @@ input.button-search:hover::placeholder {
 
 .logs-manu:hover {
    box-shadow: 2px 3px 10px 0 var(--Very-light-gray-gray),
-               -2px 0 10px 0 var(--Very-light-gray-gray); 
+               -2px 0 10px 0 var(--Very-light-gray-gray);
 }
 
 .logs-manu a:focus,
 .logs-manu a:active {
     opacity: 0.3;
     box-shadow: 2px 3px 5px 5px var(--Very-light-gray-gray),
-               -2px 0 5px 5px var(--Very-light-gray-gray); 
+               -2px 0 5px 5px var(--Very-light-gray-gray);
 }
 
 .logs-manu a {
@@ -1464,7 +1464,7 @@ input.button-search:hover::placeholder {
 
 .services-services a {
     display: block;
-} 
+}
 
 .services-delivery a {
     font-style: normal;
@@ -1608,6 +1608,15 @@ input.button-search:hover::placeholder {
     height: 38px;
 }
 
+.services-delivery-button-credit:hover {
+    background-color: var(--Strong-red-red);
+}
+
+.services-delivery-button-credit:focus,
+.services-delivery-button-credit:active {
+    background-color: var(--Strong-red);
+}
+
 /* About  */
 
 .about {
@@ -1723,7 +1732,7 @@ input.button-search:hover::placeholder {
     line-height: 24px;
     color: var(--Black);
     margin: 0;
-    margin-bottom: 32px; 
+    margin-bottom: 32px;
 }
 
 .contacts-map {
@@ -1829,7 +1838,7 @@ input.button-search:hover::placeholder {
     padding-right: 58px;
 }
 
-.footer-navigation-global li:last-child, 
+.footer-navigation-global li:last-child,
 .footer-navigation-local li:last-child {
     padding-right: 0;
 }
@@ -1960,19 +1969,19 @@ input.button-search:hover::placeholder {
     margin: 0;
 }
 
-.feedback-post, 
+.feedback-post,
 .develop-site {
     color: var(--Very-light-orange);
 }
 
-.feedback-post:hover, 
+.feedback-post:hover,
 .develop-site:hover {
     border-bottom: 1px solid var(--Very-light-orange);
 }
 
-.feedback-post:focus, 
+.feedback-post:focus,
 .develop-site:focus,
-.feedback-post:active, 
+.feedback-post:active,
 .develop-site:active {
     color: var(--Bright-red);
     border-bottom: none;
@@ -2016,7 +2025,7 @@ input.button-search:hover::placeholder {
 }
 
 .modal-map img {
-    display: block;    
+    display: block;
 }
 
 .decor-elem-modal {
@@ -2322,7 +2331,7 @@ input.button-search:hover::placeholder {
     font-weight: normal;
     font-size: 30px;
     text-transform: uppercase;
-    color: var(--Very-dark-desaturated-blue-c);    
+    color: var(--Very-dark-desaturated-blue-c);
     margin: 0;
     display: inline-block;
     padding: 29px 739px 30px 29px;
@@ -2404,7 +2413,7 @@ input.button-search:hover::placeholder {
 .range-filter {
     width: 220px;
     height: 127px;
-    margin: 11px 0 42px;   
+    margin: 11px 0 42px;
 }
 
 /* CatalogPage */
@@ -2538,7 +2547,7 @@ input.button-search:hover::placeholder {
     padding: 0;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-between;    
+    justify-content: space-between;
     margin-left: 35px;
     margin-top: 15px;
 }
@@ -2679,21 +2688,21 @@ input.button-search:hover::placeholder {
     border-radius: 50%;
     opacity: 0.3;
 }
- 
+
 /* .filter-input-radio:disabled + label::after {
     opacity: 0.3;
 }  */
 
 .filter-input-radio + label:hover::before {
     border-color: var(--Gray-B5B5B5);
-} 
+}
 
 .filter-input-radio:hover + label,
 .filter-input-radio:focus + label {
   color: var(--Gray-B5B5B5);
 }
 
-/* .filter-input-radio + label:focus::before, 
+/* .filter-input-radio + label:focus::before,
 .filter-input-radio + label:active::before {
     border-color: var(--Gray-B5B5B5);
 } */
@@ -2892,7 +2901,7 @@ input.button-search:hover::placeholder {
 /* CatalogPage */
 .perforators-list-view li:hover {
     box-shadow: 2px 3px 30px 0 var(--Very-light-gray-gray),
-                -2px 0 30px 0 var(--Very-light-gray-gray); 
+                -2px 0 30px 0 var(--Very-light-gray-gray);
 }
 
 /* CatalogPage */
@@ -2997,20 +3006,20 @@ input.button-search:hover::placeholder {
 }
 
 /* CatalogPage */
-.pagination-one:hover, 
-.pagination-two:hover, 
+.pagination-one:hover,
+.pagination-two:hover,
 .pagination-three:hover,
 .pagination-next:hover {
     border: 1px solid var(--Light-gray);
 }
 
 /* CatalogPage */
-.pagination-one:focus, 
-.pagination-two:focus, 
+.pagination-one:focus,
+.pagination-two:focus,
 .pagination-three:focus,
-.pagination-next:focus, 
-.pagination-one:active, 
-.pagination-two:active, 
+.pagination-next:focus,
+.pagination-one:active,
+.pagination-two:active,
 .pagination-three:active,
 .pagination-next:active {
     border: 1px solid var(--Bright-red);
@@ -3142,7 +3151,7 @@ input.button-search:hover::placeholder {
 /* CatalogPage, Modal window: cart */
 .button-order-catalog:hover {
     background-color: var(--Strong-red-red);
-} 
+}
 
 /* CatalogPage, Modal window: cart */
 .button-order-catalog:focus,
@@ -3168,7 +3177,7 @@ input.button-search:hover::placeholder {
 }
 
 /* CatalogPage, Modal window: cart */
-.button-continueshop-catalog:focus, 
+.button-continueshop-catalog:focus,
 .button-continueshop-catalog:active {
     border: 2px solid var(--Light-gray);
 }
