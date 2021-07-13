@@ -1,8 +1,15 @@
 // Перфораторы и Дрели
 const prevBtn = document.querySelectorAll(".slider-content-left-icon");
 const nextBtn = document.querySelectorAll(".slider-content-right-icon");
+
+const leftRadiotBtn = document.querySelectorAll(".slider-controls-left-radio");
+const rightRadioBtn = document.querySelectorAll(".slider-controls-right-radio");
+const containCurrent = document.querySelectorAll(".slider-controls > button");
+const currentPosition = document.querySelector(".current");
+
 const perfSlide = document.querySelector(".slider-content-perfo");
 const drilsSlide = document.querySelector(".slider-content-drills");
+
 prevBtn.forEach((item)=>{
   item.addEventListener("click", (evt)=>{
     evt.preventDefault()
@@ -22,6 +29,26 @@ nextBtn.forEach((item)=>{
   })
 })
 
+// //для левого radio
+// leftRadiotBtn.forEach((item)=>{
+//   item.addEventListener("click", (evt)=>{
+//     if(drilsSlide.classList.contains("display-none")) {
+//       drilsSlide.classList.remove("display-none")  
+//     }
+//     perfSlide.classList.add("display-none")
+//   })
+// })
+
+// //для правого radio
+// rightRadioBtn.forEach((item)=>{
+//   item.addEventListener("click", (evt)=>{
+//     if(perfSlide.classList.contains("display-none")){
+//       perfSlide.classList.remove("display-none")
+//     }
+//     drilsSlide.classList.add("display-none")
+//   })
+// })
+
 // Доставка
 const btnDelivery = document.querySelector('.services-delivery a');
 const btnQuarantie = document.querySelector('.services-guarantee a');
@@ -29,6 +56,7 @@ const btnCredit = document.querySelector('.services-credit a');
 const blockTruck = document.querySelector(".services-truck-position");
 const blockQuarantie = document.querySelector(".services-guarantee-position");
 const blockCredit = document.querySelector(".services-credit-position");
+
 btnDelivery.addEventListener("click", function (evt){
   evt.preventDefault();
   if(blockTruck.classList.contains("visually-hidden")){
