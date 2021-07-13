@@ -211,10 +211,16 @@ img {
     color: var(--Black);
 }
 
-.button-search:focus + .button-search-svg svg path {
+/* .button-search:focus + .button-search-svg svg path {
+    fill: var(--Bright-red);
+    opacity: 1;
+} */
+
+.button-search:focus + .button-search-svg path {
     fill: var(--Bright-red);
     opacity: 1;
 }
+
 
 .button-search-svg svg {
     opacity: 0.3;
@@ -535,14 +541,14 @@ input.button-search:hover::placeholder {
 }
 
 /* CatalogPage */
-.button-entrance-catalog-icon-user {
+/* .button-entrance-catalog-icon-user {
     width: 20px;
     height: 18px;
-}
+} */
 
-.button-entrance-catalog-icon-user svg {
+/* .button-entrance-catalog-icon-user svg {
     margin-left: -4px;
-}
+} */
 
 /* CatalogPage */
 .button-entrance-catalog-icon-logout {
@@ -620,6 +626,19 @@ input.button-search:hover::placeholder {
     font-size: 21px;
     line-height: 21px;
     color: var(--Black);
+    display: flex;
+    width: 227px;
+    justify-content: space-between;
+    margin-left: -2px;
+}
+
+.button-entrance-catalog-user:hover path {
+    fill: var(--Very-dark-desaturated-blue-basic-grey);
+}
+
+.button-entrance-catalog-user:focus path,
+.button-entrance-catalog-user:active path {
+    fill: var(--Light-gray);
 }
 
 /* CatalogPage */
@@ -674,45 +693,45 @@ input.button-search:hover::placeholder {
 .header-navigation-main {
     padding: 16px 24px 20px 27px;
     margin-left: 25px;
-    
+
 }
 
 .header-navigation-company {
     padding: 16px 24px 20px 27px;
     margin-left: 6px;
-    
+
 }
 
 .header-navigation-catalog {
     padding: 16px 24px 20px 27px;
     margin-left: 6px;
-    
+
 }
 
 
 .header-navigation-news {
     padding: 16px 24px 20px 27px;
     margin-left: 4px;
-    
+
 }
 
 
 .header-navigation-special {
     padding: 16px 24px 20px 27px;
     margin-left: 7px;
-    
+
 }
 
 .header-navigation-delivery {
     padding: 16px 24px 20px 27px;
     margin-left: 5px;
-    
+
 }
 
 .header-navigation-contacts {
     padding: 16px 24px 20px 27px;
     margin-left: 5px;
-    
+
 }
 
 .header-navigation a:hover {
@@ -1676,8 +1695,16 @@ input.button-search:hover::placeholder {
 .services-credit a:hover {
     background-color: var(--Very-dark-desaturated-blue-blue);
 }
-
-.services-delivery a:active,
+/* вот приблизительно так */
+a.services--show{
+    background-color: var(--White);
+    color: var(--Very-dark-desaturated-blue-c);
+}
+a.services--show:hover{
+    background-color: var(--White);
+    color: var(--Very-dark-desaturated-blue-c);
+}
+/* .services-delivery a:active,
 .services-guarantee a:active,
 .services-credit a:active,
 .services-delivery a:focus,
@@ -1685,7 +1712,7 @@ input.button-search:hover::placeholder {
 .services-credit a:focus {
     color: var(--Very-dark-desaturated-blue-c);
     background-color: var(--White);
-}
+} */
 
 .services-truck-position {
     width: 619px;
