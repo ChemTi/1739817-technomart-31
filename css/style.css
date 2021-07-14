@@ -424,9 +424,9 @@ input.button-search:hover::placeholder {
 }
 
 .main-header-contacts-catalog {
-    width: 270px;
+    /* width: 270px; */
     height: 72px;
-    margin-left: 40px;
+    margin-left: 36px;
 }
 
 .main-header-contacts-telephone {
@@ -437,7 +437,10 @@ input.button-search:hover::placeholder {
 }
 
 .main-header-contacts-telephone-catalog {
-
+    /* width: 270px; */
+    height: 45px;
+    border: 3px solid var(--White);
+    margin-top: -3px;
 }
 
 .telephone, .telephone-catalog {
@@ -449,6 +452,19 @@ input.button-search:hover::placeholder {
     display: block;
     margin: 7px 50px 8px 70px;
 }
+
+.telephone::before {
+    content: "";
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    background-image: url("../img/index/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: 0;
+    top: 5px;
+    left: -35px;
+} 
+
 
 .telephone-catalog::before {
     content: "";
@@ -471,8 +487,7 @@ input.button-search:hover::placeholder {
 }
 
 .adress-catalog {
-    margin-left: -4px;
-    margin-top: 11px;
+    margin-left: -3px;
 }
 
 .authorization {
